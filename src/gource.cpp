@@ -1,3 +1,4 @@
+
 /*
     Copyright (C) 2009 Andrew Caudwell (acaudwell@gmail.com)
 
@@ -17,6 +18,7 @@
 
 #include "gource.h"
 #include "core/png_writer.h"
+#include <iostream>
 
 bool  gGourceDrawBackground  = true;
 bool  gGourceQuadTreeDebug   = false;
@@ -148,6 +150,8 @@ Gource::Gource(FrameExporter* exporter) {
 
     //if recording a video or in demo mode, or multiple repos, the slider is initially hidden
     if(exporter==0 && gGourceSettings.repo_count==1) slider.show();
+
+    rotate_angle = (float)(80 * DEGREES_TO_RADIANS);
 }
 
 void Gource::writeCustomLog(const std::string& logfile, const std::string& output_file) {
@@ -896,7 +900,7 @@ void Gource::reset() {
 
     commitqueue_max_size = 100;
 
-    rotate_angle = 0.0f;
+    rotate_angle = 80.0f * DEGREES_TO_RADIANS;
 
     if(root!=0) delete root;
     root = new RDirNode(0, "/");
@@ -1596,14 +1600,71 @@ void Gource::logic(float t, float dt) {
     down  = keystate[SDLK_DOWN];
 #endif
 
+    double tscaler = (4.0 / 3.0) * 3.0 / 2.0;
+
+    if (5.0f < t && t < 8.0f) {
+        rotate_angle += 1.25f * DEGREES_TO_RADIANS;
+    }
+
+    if (20.0f * tscaler < t && t < 30.0f * tscaler) {
+//        rotate_angle -= 0.25f * DEGREES_TO_RADIANS;
+    }
+
+    if (28.0f * tscaler < t && t < 32.0f * tscaler) {
+        rotate_angle += 0.25f * DEGREES_TO_RADIANS;
+    }
+//    std::cout << t << std::endl;
+
+    double rotsuppresthreshold = 40.0f * tscaler;
+    if (rotsuppresthreshold < t) {
+//        rotate_angle = 0;
+
+        double lerpto = 45.0f * tscaler;
+        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
+        if (scale > 1) {
+            scale = 1.0f;
+        }
+
+        rotate_angle += scale * 0.10f * DEGREES_TO_RADIANS;
+    }
+
+    rotsuppresthreshold = 50.0f * tscaler;
+    if (rotsuppresthreshold < t) {
+//        rotate_angle = 0;
+
+        double lerpto = 55.0f * tscaler;
+        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
+        if (scale > 1) {
+            scale = 1.0f;
+        }
+
+        rotate_angle += scale * 0.01f * DEGREES_TO_RADIANS;
+    }
+
+    rotsuppresthreshold = 55.0f * tscaler;
+    if (rotsuppresthreshold < t) {
+//        rotate_angle = 0;
+
+        double lerpto = 60.0f * tscaler;
+        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
+        if (scale > 1) {
+            scale = 1.0f;
+        }
+
+        rotate_angle -= scale * 0.02f * DEGREES_TO_RADIANS;
+    }
+
+
     if(right) {
-        cursor_move.x = 10.0;
-        manual_camera = true;
+        rotate_angle += 2.0f * DEGREES_TO_RADIANS;
+//        cursor_move.x = 10.0;
+//        manual_camera = true;
     }
 
     if(left) {
-        cursor_move.x = -10.0;
-        manual_camera = true;
+        rotate_angle -= 2.0f * DEGREES_TO_RADIANS;
+//        cursor_move.x = -10.0;
+//        manual_camera = true;
     }
 
     if(up) {

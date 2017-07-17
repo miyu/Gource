@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Gource"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/miyu/src/miyu/Gource/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/miyu/src/miyu/Gource/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/miyu/src/miyu/Gource/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Gource">
+				<Option output="/Users/miyu/src/miyu/Gource/cmake-build-default/Gource" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/miyu/src/miyu/Gource/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 Gource"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Gource/fast">
+				<Option output="/Users/miyu/src/miyu/Gource/cmake-build-default/Gource" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/miyu/src/miyu/Gource/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 Gource/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/miyu/src/miyu/Gource/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/miyu/src/miyu/Gource/Makefile">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/Makefile.am">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/Makefile.in">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/aclocal.m4">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/autogen.sh">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/configure">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/configure.ac">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/action.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/action.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/bloom.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/bloom.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/caption.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/caption.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/bounds.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/conffile.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/conffile.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/display.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/display.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/frustum.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/frustum.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ftgl/FTUnicode.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/fxfont.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/fxfont.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/gl.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/logger.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/logger.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/mousecursor.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/mousecursor.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/pi.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/plane.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/plane.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/png_writer.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/png_writer.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ppm.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ppm.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/quadtree.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/quadtree.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/regex.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/regex.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/resource.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/resource.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/sdlapp.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/sdlapp.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/seeklog.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/seeklog.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/settings.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/settings.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/shader.cc">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/shader.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/shader.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/shader.hh">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/shader_common.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/shader_common.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/stringhash.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/stringhash.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/texture.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/texture.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/tga.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/tga.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/timer.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/timer.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/timezone.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/timezone.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/action.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/button.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/button.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/checkbox.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/checkbox.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/colour.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/colour.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/console.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/console.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/element.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/element.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/file_selector.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/file_selector.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/group.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/group.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/image.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/image.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/label.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/label.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/layout.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/layout.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/scroll_bar.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/scroll_bar.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/scroll_layout.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/scroll_layout.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/select.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/select.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/slider.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/slider.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/solid_layout.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/solid_layout.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/subgroup.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/subgroup.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/ui.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/ui/ui.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/utf8/checked.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/utf8/core.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/utf8/unchecked.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/utf8/utf8.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/vbo.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/vbo.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/vectors.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/core/vectors.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/dirnode.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/dirnode.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/file.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/file.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/apache.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/apache.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/bzr.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/bzr.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/commitlog.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/commitlog.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/custom.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/custom.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/cvs-exp.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/cvs-exp.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/cvs2cl.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/cvs2cl.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/git.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/git.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/gitraw.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/gitraw.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/hg.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/hg.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/svn.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/formats/svn.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/gource.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/gource.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/gource_settings.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/gource_settings.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/gource_shell.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/gource_shell.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/key.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/key.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/logmill.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/logmill.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/main.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/main.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/pawn.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/pawn.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/slider.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/slider.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/spline.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/spline.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/textbox.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/textbox.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/tinyxml/tinystr.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/tinyxml/tinystr.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/tinyxml/tinyxml.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/tinyxml/tinyxml.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/tinyxml/tinyxmlerror.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/tinyxml/tinyxmlparser.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/user.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/user.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/zoomcamera.cpp">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/src/zoomcamera.h">
+			<Option target="Gource"/>
+		</Unit>
+		<Unit filename="/Users/miyu/src/miyu/Gource/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

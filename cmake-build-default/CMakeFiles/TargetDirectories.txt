@@ -1,0 +1,3 @@
+/Users/miyu/src/miyu/Gource/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/Users/miyu/src/miyu/Gource/cmake-build-default/CMakeFiles/edit_cache.dir
+/Users/miyu/src/miyu/Gource/cmake-build-default/CMakeFiles/Gource.dir
