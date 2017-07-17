@@ -2106,7 +2106,7 @@ void Gource::drawScene(float dt) {
 
     draw_actions_time = SDL_GetTicks();
 
-    drawActions(dt);
+//    drawActions(dt);
 
     draw_actions_time = SDL_GetTicks() - draw_actions_time;
 

@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6364ab6c-6f45-4fb0-8f6f-0d6a8618e951" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gource.cpp" afterPath="$PROJECT_DIR$/src/gource.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gource_shell.cpp" afterPath="$PROJECT_DIR$/src/gource_shell.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="gource.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gource.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="1614" column="32" lean-forward="false" selection-start-line="1614" selection-start-column="32" selection-end-line="1614" selection-end-column="32" />
+            <state relative-caret-position="541">
+              <caret line="2110" column="0" lean-forward="true" selection-start-line="2110" selection-start-column="0" selection-end-line="2110" selection-end-column="0" />
               <folding>
                 <element signature="e#722#741#0" expanded="true" />
               </folding>
@@ -457,12 +455,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499890377202</updated>
       <workItem from="1499890379699" duration="809000" />
-      <workItem from="1499894655798" duration="12638000" />
+      <workItem from="1499894655798" duration="12695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13447000" />
+    <option name="totallyTimeSpent" value="13504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1172" extended-state="6" />
@@ -676,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gource.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="1614" column="32" lean-forward="false" selection-start-line="1614" selection-start-column="32" selection-end-line="1614" selection-end-column="32" />
+        <state relative-caret-position="541">
+          <caret line="2110" column="0" lean-forward="true" selection-start-line="2110" selection-start-column="0" selection-end-line="2110" selection-end-column="0" />
           <folding>
             <element signature="e#722#741#0" expanded="true" />
           </folding>
