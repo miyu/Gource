@@ -1602,59 +1602,27 @@ void Gource::logic(float t, float dt) {
 
     double tscaler = (4.0 / 3.0) * 3.0 / 2.0;
 
-    if (5.0f < t && t < 8.0f) {
-        rotate_angle += 1.25f * DEGREES_TO_RADIANS;
+    if (10.0f < t && t < 14.0f) {
+        rotate_angle += 0.25f * DEGREES_TO_RADIANS;
     }
 
     if (20.0f * tscaler < t && t < 30.0f * tscaler) {
 //        rotate_angle -= 0.25f * DEGREES_TO_RADIANS;
     }
-
-    if (28.0f * tscaler < t && t < 32.0f * tscaler) {
-        rotate_angle += 0.25f * DEGREES_TO_RADIANS;
-    }
 //    std::cout << t << std::endl;
 
-    double rotsuppresthreshold = 40.0f * tscaler;
+    double rotsuppresthreshold = 60.0f * tscaler;
     if (rotsuppresthreshold < t) {
 //        rotate_angle = 0;
 
-        double lerpto = 45.0f * tscaler;
+        double lerpto = 65.0f * tscaler;
         double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
         if (scale > 1) {
             scale = 1.0f;
         }
 
-        rotate_angle += scale * 0.10f * DEGREES_TO_RADIANS;
+        rotate_angle -= scale * 0.10f * DEGREES_TO_RADIANS;
     }
-
-    rotsuppresthreshold = 50.0f * tscaler;
-    if (rotsuppresthreshold < t) {
-//        rotate_angle = 0;
-
-        double lerpto = 55.0f * tscaler;
-        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
-        if (scale > 1) {
-            scale = 1.0f;
-        }
-
-        rotate_angle += scale * 0.01f * DEGREES_TO_RADIANS;
-    }
-
-    rotsuppresthreshold = 55.0f * tscaler;
-    if (rotsuppresthreshold < t) {
-//        rotate_angle = 0;
-
-        double lerpto = 60.0f * tscaler;
-        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
-        if (scale > 1) {
-            scale = 1.0f;
-        }
-
-        rotate_angle -= scale * 0.02f * DEGREES_TO_RADIANS;
-    }
-
-
     if(right) {
         rotate_angle += 2.0f * DEGREES_TO_RADIANS;
 //        cursor_move.x = 10.0;
