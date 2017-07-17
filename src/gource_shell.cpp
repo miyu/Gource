@@ -266,6 +266,7 @@ void GourceShell::blendLastFrame(float dt) {
 }
 
 void GourceShell::update(float t, float dt) {
+    dt = 1.0f / 60.0f;
 
     if(gource == 0 || gource->isFinished()) {
         if(!getNext()) appFinished=true;

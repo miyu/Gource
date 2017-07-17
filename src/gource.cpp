@@ -1534,6 +1534,18 @@ void Gource::changeColours() {
     file_key.colourize();
 }
 
+float lerp_to(float v, float t, float ts, float te) {
+    if (t < ts) {
+        return 0.0f;
+    }
+
+    if (t > te) {
+        return v;
+    }
+
+    return v * (t - ts) / (te - ts);
+}
+
 void Gource::logic(float t, float dt) {
 
     if(gGourceSettings.shutdown && logmill->isFinished()) {
@@ -1600,29 +1612,64 @@ void Gource::logic(float t, float dt) {
     down  = keystate[SDLK_DOWN];
 #endif
 
-    double tscaler = (4.0 / 3.0) * 3.0 / 2.0;
-
-    if (10.0f < t && t < 14.0f) {
-        rotate_angle += 0.25f * DEGREES_TO_RADIANS;
-    }
-
-    if (20.0f * tscaler < t && t < 30.0f * tscaler) {
-//        rotate_angle -= 0.25f * DEGREES_TO_RADIANS;
-    }
 //    std::cout << t << std::endl;
+    rotate_angle -= lerp_to(0.5f * DEGREES_TO_RADIANS, t, 4.0f, 6.0f);
+    rotate_angle += lerp_to(0.5f * DEGREES_TO_RADIANS, t, 12.0f, 14.0f);
 
-    double rotsuppresthreshold = 60.0f * tscaler;
-    if (rotsuppresthreshold < t) {
-//        rotate_angle = 0;
+    rotate_angle -= lerp_to(0.1f * DEGREES_TO_RADIANS, t, 16.0f, 20.0f);
+    rotate_angle += lerp_to(0.05f * DEGREES_TO_RADIANS, t, 30.0f, 32.0f);
+    rotate_angle += lerp_to(0.05f * DEGREES_TO_RADIANS, t, 60.0f, 62.0f);
 
-        double lerpto = 65.0f * tscaler;
-        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
-        if (scale > 1) {
-            scale = 1.0f;
-        }
+    rotate_angle += lerp_to(0.03f * DEGREES_TO_RADIANS, t, 80.0f, 82.0f);
+    rotate_angle -= lerp_to(0.03f * DEGREES_TO_RADIANS, t, 95.0f, 97.0f);
 
-        rotate_angle -= scale * 0.10f * DEGREES_TO_RADIANS;
-    }
+    rotate_angle += lerp_to(0.02f * DEGREES_TO_RADIANS, t, 100.0f, 102.0f);
+    rotate_angle += lerp_to(0.02f * DEGREES_TO_RADIANS, t, 110.0f, 112.0f);
+    rotate_angle -= lerp_to(0.02f * DEGREES_TO_RADIANS, t, 120.0f, 122.0f);
+    rotate_angle -= lerp_to(0.02f * DEGREES_TO_RADIANS, t, 125.0f, 127.0f);
+
+    rotate_angle -= lerp_to(0.02f * DEGREES_TO_RADIANS, t, 135.0f, 137.0f);
+    rotate_angle += lerp_to(0.02f * DEGREES_TO_RADIANS, t, 140.0f, 142.0f);
+
+//    rotate_angle -= lerp_to(0.5f * DEGREES_TO_RADIANS, t, 10.0f, 12.0f);
+//    rotate_angle += lerp_to(0.5f * DEGREES_TO_RADIANS, t, 18.0f, 20.0f);
+//    rotate_angle -= lerp_to(0.05f * DEGREES_TO_RADIANS, t, 38.0f, 40.0f);
+//    rotate_angle += lerp_to(0.05f * DEGREES_TO_RADIANS, t, 70.0f, 72.0f);
+//    rotate_angle += lerp_to(0.02f * DEGREES_TO_RADIANS, t, 105.0f, 110.0f);
+
+//    if (10.0f < t && t < 18.0f) {
+//        rotate_angle -= 0.5f * DEGREES_TO_RADIANS;
+//    }
+//
+//
+//
+//    double rotsuppresthreshold = 30.0f * tscaler;
+//    if (rotsuppresthreshold < t) {
+////        rotate_angle = 0;
+//
+//        double lerpto = 35.0f * tscaler;
+//        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
+//        if (scale > 1) {
+//            scale = 1.0f;
+//        }
+//
+//        rotate_angle -= scale * 0.10f * DEGREES_TO_RADIANS;
+//    }
+//
+//    rotsuppresthreshold = 55.0f * tscaler;
+//    if (rotsuppresthreshold < t) {
+////        rotate_angle = 0;
+//
+//        double lerpto = 60.0f * tscaler;
+//        double scale = (t - rotsuppresthreshold) / (lerpto - rotsuppresthreshold);
+//        if (scale > 1) {
+//            scale = 1.0f;
+//        }
+//
+//        rotate_angle += scale * 0.10f * DEGREES_TO_RADIANS;
+//    }
+
+
     if(right) {
         rotate_angle += 2.0f * DEGREES_TO_RADIANS;
 //        cursor_move.x = 10.0;
