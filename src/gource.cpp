@@ -19,6 +19,7 @@
 #include "gource.h"
 #include "core/png_writer.h"
 #include <iostream>
+#include <sstream>
 
 bool  gGourceDrawBackground  = true;
 bool  gGourceQuadTreeDebug   = false;
@@ -282,7 +283,7 @@ std::string Gource::dateAtPosition(float percent) {
 
         // TODO: memory leak ??
         struct tm* timeinfo = localtime ( &(commit.timestamp) );
-        strftime(datestr, 256, "%A, %d %B, %Y", timeinfo);
+        strftime(datestr, 256, "%B %Y", timeinfo);
 
         date = std::string(datestr);
     }
@@ -1089,6 +1090,14 @@ void Gource::loadCaptions() {
 
         //ignore out of order captions
         if(timestamp < last_timestamp) continue;
+
+        // No tengo a string split
+        std::stringstream s(caption);
+        std::string dayOfWeek, day, month, year, ts;
+        s >> dayOfWeek >> day >> month >> year >> ts;
+        caption = month + year;
+
+        std::cout << caption << std::endl;
 
         last_timestamp = timestamp;
 

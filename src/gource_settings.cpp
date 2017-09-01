@@ -405,7 +405,7 @@ void GourceSettings::setGourceDefaults() {
     git_branch = "";
 
     log_format  = "";
-    date_format = "%A, %d %B, %Y %X";
+    date_format = "%d %B %Y";
 
     max_files      = 0;
     max_user_speed = 500.0f;
